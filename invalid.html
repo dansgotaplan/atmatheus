@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Error</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f1419, #1a202c, #0d1117);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            gap: 40px;
+        }
+
+        .error-message {
+            color: #f8f9fa;
+            font-size: 36px;
+            font-weight: 500;
+            text-align: center;
+            max-width: 80%;
+        }
+
+        .retry-btn {
+            background-color: #f8f9fa;
+            border: none;
+            border-radius: 50px;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: 500;
+            color: #333;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .retry-btn:hover {
+            background-color: #ffffff;
+            transform: translateY(-2px) scale(1.15);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .retry-btn:active {
+            transform: translateY(0) scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-message">Usuário ou senha errados.</div>
+    <button class="retry-btn" onclick="window.location.href='http://127.0.0.1/login'">Tentar novamente</button>
+</body>
+</html>
