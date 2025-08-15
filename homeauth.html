@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background: linear-gradient(135deg, #87ceeb, #4a90e2, #6bb6ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .logout-btn {
+            background-color: #f8f9fa;
+            border: none;
+            border-radius: 50px;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: 500;
+            color: #333;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #ffffff;
+            transform: translateY(-2px) scale(1.15);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .logout-btn:active {
+            transform: translateY(0) scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <button class="logout-btn" onclick="window.location.href='http://127.0.0.1/logout'">Logout</button>
+</body>
+</html>
